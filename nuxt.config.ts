@@ -6,5 +6,12 @@ export default defineNuxtConfig({
   css,
   alias,
   srcDir,
-  dir
+  dir,
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      title: 'Vilga village'
+    }
+  }
 })
