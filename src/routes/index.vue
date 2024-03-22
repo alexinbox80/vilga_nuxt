@@ -1,8 +1,8 @@
 <script lang="ts" setup>
+import Header from '@ui/components/Header';
 
 </script>
+
 <template>
-  <div>
-    Hello WORLD!
-  </div>
+    <Header />
 </template>

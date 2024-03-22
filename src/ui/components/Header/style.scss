@@ -1,0 +1,179 @@
+@import '../../assets/sass/variables/mixins';
+@import '../../assets/sass/variables/colors';
+
+$root: '';
+
+.top {
+  flex-grow: 1;
+}
+
+.mask__content {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.logo {
+  background: url("../../assets/images/logo.svg") no-repeat center;
+  width: 122px;
+  height: 96px;
+}
+
+.phone a {
+  @include fontProper(24px, 500, 26.4px, 0.04em, $fontColor);
+  text-decoration: none;
+}
+
+.header {
+  position: relative;
+  background-color: $backgroundColor;
+
+  &__top {
+    height: $headerHeight;
+    display: flex;
+    align-items: center;
+  }
+
+  &__topitem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__shadow {
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  &__menu {
+    cursor: pointer;
+  }
+
+  &__textmenu {
+    display: flex;
+  }
+
+  &__background {
+    background: url("../../assets/images/bannerfilter.png"), url("../../assets/images/banner.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 523px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__stitle {
+    @include fontProper(12px, 400, 20px, 0.015em, $fontColor);
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &__form {
+    background: $backgroundColor;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 2px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    border-radius: 16px;
+    padding: 48px 19px 32px;
+    position: relative;
+  }
+
+  &__formtitle {
+    margin-bottom: 24px;
+    @include fontProper(18px, 400, 32px, 0.02em, $fontColor);
+  }
+
+  &__formicon {
+    position: absolute;
+    top: -50px;
+    left: 135px;
+  }
+
+  &__form-name {
+    background: $backgroundColor;
+    border: 1px solid rgba(88, 159, 23, 0.23);
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    @include fontProper(18px, 400, 32px, 0.02em, $fontFormColor);
+  }
+
+  &__form-phone {
+    background: $backgroundColor;
+    border: 1px solid rgba(88, 159, 23, 0.23);
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    @include fontProper(18px, 400, 32px, 0.02em, $fontFormColor);
+  }
+
+  &__form-submit {
+    @include fontProper(12px, 400, 14px, 0.02em, $backgroundColor);
+    text-transform: uppercase;
+    background: $colorSelect;
+    border-radius: 1px 1px 1px 2px;
+    border: 1px solid $colorSelect;
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  &__form-submit:hover {
+    @include fontProper(12px, 400, 14px, 0.02em, $backgroundColor);
+    background: $colorSelectHover;
+  }
+
+  &__form-submit:active {
+    @include fontProper(12px, 400, 14px, 0.02em, $backgroundColor);
+    background: $colorSelectActive;
+    border: 1px solid $colorSelectActive;
+  }
+}
+
+#header__formfields {
+  display: flex;
+  flex-direction: column;
+}
+
+.top__menu {
+  display: none;
+}
+
+.menu {
+  &__textitem:not(:nth-child(2)) {
+    width: 112px;
+  }
+
+  &__textitem:nth-child(2) {
+    width: 60px;
+  }
+
+  &__textitem:not(:last-child) {
+    margin-right: 63px;
+  }
+
+  &__textitem a:hover {
+    @include fontProper(12px, 800, 20px, 0.084em, $fontColor);
+    background: url("../../assets/images/hline.svg") no-repeat bottom left;
+    padding-bottom: 5px;
+  }
+
+  &__textlink {
+    text-decoration: none;
+    @include fontProper(12px, 500, 20px, 0.084em, $fontColor);
+    text-transform: uppercase;
+  }
+}

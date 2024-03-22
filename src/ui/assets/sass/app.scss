@@ -2,3 +2,67 @@
 @import './variables/colors';
 @import './variables/mixins';
 @import './fonts';
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #32322C;
+  background-color: #FFF;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+ul, li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: 0.03em;
+  color: #32322C;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 45px;
+  letter-spacing: 0.07em;
+  color: #32322C;
+}
+
+h2:first-letter {
+  text-transform: uppercase;
+}
+
+p:first-letter {
+  text-transform: uppercase;
+}
+
+input[type=text] {
+  padding: 8px 24px;
+}
+
+input[type=text]:focus {
+  border: 1px solid rgba(88, 159, 23, 0.23);
+  box-sizing: border-box;
+}
+
+input[type=text]:invalid:not(:placeholder-shown) {
+  border-color: #EB5757;
+}
+
+.content {
+  padding: 0 calc(50% - 621px);
+}

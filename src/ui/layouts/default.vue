@@ -2,17 +2,15 @@
 </script>
 
 <template>
-  <div class="application">
-    <div class="content">
-      <div class="wrap">
-        <div class="page">
-          <slot />
-        </div>
-      </div>
-    </div>
+  <div class="wrapper">
+    <slot/>
   </div>
 </template>
 
 <style lang="scss" scoped>
-
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 </style>

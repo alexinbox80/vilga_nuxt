@@ -1,0 +1,13 @@
+@mixin fontProper($fontSize, $fontWeight, $lineHeight, $letterSpacing, $fontColor) {
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+  color:  $fontColor;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
