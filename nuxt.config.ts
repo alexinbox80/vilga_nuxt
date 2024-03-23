@@ -9,9 +9,13 @@ export default defineNuxtConfig({
   dir,
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'ru'
+      },
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       title: 'Vilga village'
     }
-  }
+  },
+  ssr: false
 })

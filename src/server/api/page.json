@@ -1,0 +1,32 @@
+{
+  "lang": "ru",
+  "meta_title": "Meta Title",
+  "meta_description": "Meta Description",
+  "title": "title_page",
+  "menu": [
+    {
+      "name" : "преимущества",
+      "href" : "#advantages"
+    },
+    {
+      "name" : "галерея",
+      "href" : "#gallery"
+    },
+    {
+      "name" : "план&nbsp;поселка",
+      "href" : "#schema"
+    },
+    {
+      "name" : "как&nbsp;проехать",
+      "href" : "#map"
+    }
+  ],
+  "banner": {
+    "header": "участки от <br> 300 тысяч рублей",
+    "sub_header": "экологичная жизнь около чистого леса",
+    "form_title": "У вас есть вопросы? Оставьте заявку на <br> обратный звонок и мы поможем <br> подобрать вам подходящий участок.",
+    "form_name": "Имя",
+    "form_phone": "Телефон",
+    "form_button": "Оставить заявку"
+  }
+}

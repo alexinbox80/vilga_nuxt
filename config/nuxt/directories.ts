@@ -1,7 +1,7 @@
 export const dir = {
     middleware: 'application/Middlewares',
     layouts: 'ui/layouts',
-    pages: 'routes'
+    pages: 'routes',
 };
 
 export const srcDir = 'src/';
