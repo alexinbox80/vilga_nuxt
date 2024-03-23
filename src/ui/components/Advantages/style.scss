@@ -1,0 +1,35 @@
+@import '../../assets/sass/variables/mixins';
+@import '../../assets/sass/variables/colors';
+
+.advntcontent {
+  padding: 0 calc(50% - 409px);
+}
+
+.advantages {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background: url("../../assets/images/bgadv.jpg") no-repeat right bottom;
+
+  &__text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: calc(100% / 2 - 121px);
+    margin-bottom: 32px;
+  }
+
+  &__pics {
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    @include fontProper(16px, 700, 26px, 0.04em, $fontColor)
+  }
+
+  &__text {
+    @include fontProper(14px, 400, 28.5px, 0.01em, $fontColor)
+  }
+}

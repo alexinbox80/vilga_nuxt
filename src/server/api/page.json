@@ -1,8 +1,9 @@
 {
   "lang": "ru",
+  "charset": "utf-8",
   "meta_title": "Meta Title",
   "meta_description": "Meta Description",
-  "title": "title_page",
+  "title": "Vilga village",
   "menu": [
     {
       "name" : "преимущества",

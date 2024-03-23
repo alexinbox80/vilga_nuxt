@@ -37,7 +37,7 @@ defineProps({
                     </label>
                   </li>
                   <li class="menu__item" v-for="item in menu" :key="item.key">
-                    <NuxtLink :href="item.href" class="menu__link" v-html="item.name"></NuxtLink>
+                    <NuxtLink :to="item.href" class="menu__link" v-html="item.name"></NuxtLink>
                   </li>
                 </ul>
               </nav>
@@ -45,20 +45,20 @@ defineProps({
             </div>
             <ul class="header__topitem">
               <li class="header__titem">
-                <NuxtLink href="/" class="logo__link">
+                <NuxtLink to="/" class="logo__link">
                   <div class="logo"></div>
                 </NuxtLink>
               </li>
               <li class="header__titem">
                 <ul class="header__textmenu">
                   <li class="menu__textitem" v-for="item in menu" :key="item.key">
-                    <NuxtLink :href="item.href" class="menu__textlink" v-html="item.name"></NuxtLink>
+                    <NuxtLink :to="item.href" class="menu__textlink" v-html="item.name"></NuxtLink>
                   </li>
                 </ul>
               </li>
               <li class="header__titem">
                 <span class="header__phone phone">
-                  <NuxtLink href="tel:78126071795">7 812 607 17 95</NuxtLink>
+                  <NuxtLink to="tel:78126071795">7 812 607 17 95</NuxtLink>
                 </span>
               </li>
             </ul>

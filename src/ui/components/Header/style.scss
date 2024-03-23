@@ -20,12 +20,6 @@ $root: '';
   opacity: 0;
 }
 
-.logo {
-  background: url("../../assets/images/logo.svg") no-repeat center;
-  width: 122px;
-  height: 96px;
-}
-
 .phone a {
   @include fontProper(24px, 500, 26.4px, 0.04em, $fontColor);
   text-decoration: none;

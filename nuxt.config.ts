@@ -7,15 +7,5 @@ export default defineNuxtConfig({
   alias,
   srcDir,
   dir,
-  app: {
-    head: {
-      htmlAttrs: {
-        lang: 'ru'
-      },
-      charset: 'utf-8',
-      viewport: 'width=device-width, initial-scale=1',
-      title: 'Vilga village'
-    }
-  },
   ssr: false
 })
