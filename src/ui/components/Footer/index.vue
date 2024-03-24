@@ -1,4 +1,9 @@
 <script setup lang="ts">
+defineProps({
+  title: String,
+  menu: Array,
+  contact: String
+})
 
 </script>
 
@@ -7,37 +12,28 @@
     <div class="content">
       <ul class="footer__content">
         <li class="footer__item">
-          <a href="/" class="logo__link">
+          <NuxtLink href="/" class="logo__link">
             <div class="logo"></div>
-          </a>
+          </NuxtLink>
         </li>
         <li class="footer__item footer__iposition">
           <ul class="footer__textmenu">
-            <li class="footer__textitem">
-              <a href="#advantages" class="footer__textlink">преимущества</a>
-            </li>
-            <li class="footer__textitem">
-              <a href="#gallery" class="footer__textlink">галерея</a>
-            </li>
-            <li class="mfooter__textitem">
-              <a href="#schema" class="footer__textlink">план&nbsp;поселка</a>
-            </li>
-            <li class="footer__textitem">
-              <a href="#map" class="footer__textlink">как&nbsp;проехать</a>
+            <li class="footer__textitem" v-for="item of menu" :key="item.key">
+              <NuxtLink :to="item.href" class="footer__textlink" v-html="item.name"></NuxtLink>
             </li>
           </ul>
         </li>
         <li class="footer__item footer__addressmob">
-          <p class="footer__address">Вилга парк, поселок Новая Вилга</p>
+          <p class="footer__address">{{ title }}</p>
           <p class="footer__phone phone">
-            <a href="tel:78126071795">7 812 607 17 95</a>
+            <NuxtLink :to="'tel:' + contact">{{ contact }}</NuxtLink>
           </p>
         </li>
       </ul>
       <div class="footer__item footer__addressdesc">
-        <p class="footer__address">Вилга парк, поселок Новая Вилга</p>
+        <p class="footer__address">{{ title }}</p>
         <p class="footer__phone phone">
-          <a href="tel:78126071795">7 812 607 17 95</a>
+          <NuxtLink :to="'tel:' + contact">{{ contact }}</NuxtLink>
         </p>
       </div>
     </div>

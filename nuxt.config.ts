@@ -7,5 +7,5 @@ export default defineNuxtConfig({
   alias,
   srcDir,
   dir,
-  ssr: false
+  ssr: false,
 })

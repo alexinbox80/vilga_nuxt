@@ -1,9 +1,9 @@
-@import './reset';
+@import 'mobile';
+@import 'menu';
 @import './variables/colors';
 @import './variables/mixins';
+@import './reset';
 @import './fonts';
-@import './mobile';
-@import './menu';
 
 html {
   height: 100%;

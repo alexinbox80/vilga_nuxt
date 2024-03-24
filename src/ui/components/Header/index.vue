@@ -6,7 +6,8 @@ defineProps({
   form_name: String,
   form_phone: String,
   form_button: String,
-  menu: Array
+  menu: Array,
+  contact: String
 })
 
 </script>
@@ -58,7 +59,7 @@ defineProps({
               </li>
               <li class="header__titem">
                 <span class="header__phone phone">
-                  <NuxtLink to="tel:78126071795">7 812 607 17 95</NuxtLink>
+                  <NuxtLink :to="'tel:' + contact">{{ contact }}</NuxtLink>
                 </span>
               </li>
             </ul>

@@ -1,4 +1,8 @@
 <script setup lang="ts">
+defineProps({
+  title: String,
+  items: Array
+})
 
 </script>
 
@@ -7,7 +11,7 @@
     <div class="advntcontent">
       <div class="section__header">
         <div class="section__text">
-          <h2 class="section__title">преимущества</h2>
+          <h2 class="section__title"> {{ title }} </h2>
           <span class="section__hline">
             <svg width="122" height="4" viewBox="0 0 122 4" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -43,12 +47,9 @@
               </svg>
             </div>
             <h5 class="advantages__title">
-              Транспортная доступность
+              {{ items[0].title }}
             </h5>
-            <p class="advantages__text">
-              Поселок расположен всего в 15 километрах от города петрозаводск. На машине дорога займет
-              от 15 минут, рейсовые автобусы ходят каждые 30 минут.
-            </p>
+            <p class="advantages__text">{{ items[0].text }}</p>
           </li>
           <li class="advantages__item">
             <div class="advantages__pics">
@@ -71,12 +72,9 @@
               </svg>
             </div>
             <h5 class="advantages__title">
-              Экологичный район
+              {{ items[1].title }}
             </h5>
-            <p class="advantages__text">
-              Природа, отдаленная от больших городов и промышленных центров, подарит тишину и свежий
-              воздух
-            </p>
+            <p class="advantages__text">{{ items[1].text }}</p>
           </li>
           <li class="advantages__item">
             <div class="advantages__pics">
@@ -92,12 +90,9 @@
               </svg>
             </div>
             <h5 class="advantages__title">
-              Живописный ландшафт
+              {{ items[2].title }}
             </h5>
-            <p class="advantages__text">
-              Поселок окружен лесом из сосновых боров и березовых рощ. В них растут дикие
-              разнообразные Карельские ягоды и грибы.
-            </p>
+            <p class="advantages__text">{{ items[2].text }}</p>
           </li>
           <li class="advantages__item">
             <div class="advantages__pics">
@@ -117,12 +112,9 @@
               </svg>
             </div>
             <h5 class="advantages__title">
-              Центральные коммуникации
+              {{ items[3].title }}
             </h5>
-            <p class="advantages__text">
-              Поселок оснащен газом и электричеством, коммунальные платежи за которые достаточно
-              недорогие.
-            </p>
+            <p class="advantages__text">{{ items[3].text }}</p>
           </li>
         </ul>
       </div>

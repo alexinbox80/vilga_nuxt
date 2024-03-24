@@ -39,11 +39,29 @@ console.log(toRaw(page.value));
         :form_phone="page.banner.form_phone"
         :form_button="page.banner.form_button"
         :menu="page.menu"
+        :contact="page.contact_phone"
     />
-    <Advantages/>
-    <Gallery/>
-    <Schema/>
-    <Map/>
-    <Footer/>
+    <Advantages
+        :title="page.advantages.header"
+        :items="page.advantages.items"
+    />
+    <Gallery
+        :title="page.gallery.header"
+        :images="page.gallery.images"
+    />
+    <Schema
+        :title="page.schema.header"
+        :image="page.schema.image"
+    />
+    <Map
+        :title="page.map.header"
+        :text="page.map.text"
+        :image="page.map.image"
+    />
+    <Footer
+        :title="page.footer.header"
+        :menu="page.menu"
+        :contact="page.contact_phone"
+    />
   </div>
 </template>
