@@ -19,7 +19,7 @@ defineProps({
         <li class="footer__item footer__iposition">
           <ul class="footer__textmenu">
             <li class="footer__textitem" v-for="item of menu" :key="item.key">
-              <NuxtLink :to="item.href" class="footer__textlink" v-html="item.name"></NuxtLink>
+              <NuxtLink :to="item.href" class="footer__textlink">{{ item.name }}</NuxtLink>
             </li>
           </ul>
         </li>

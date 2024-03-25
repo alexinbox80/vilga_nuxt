@@ -38,7 +38,7 @@ defineProps({
                     </label>
                   </li>
                   <li class="menu__item" v-for="item in menu" :key="item.key">
-                    <NuxtLink :to="item.href" class="menu__link" v-html="item.name"></NuxtLink>
+                    <NuxtLink :to="item.href" class="menu__link">{{ item.name }}</NuxtLink>
                   </li>
                 </ul>
               </nav>
@@ -53,7 +53,7 @@ defineProps({
               <li class="header__titem">
                 <ul class="header__textmenu">
                   <li class="menu__textitem" v-for="item in menu" :key="item.key">
-                    <NuxtLink :to="item.href" class="menu__textlink" v-html="item.name"></NuxtLink>
+                    <NuxtLink :to="item.href" class="menu__textlink">{{ item.name }}</NuxtLink>
                   </li>
                 </ul>
               </li>

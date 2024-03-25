@@ -15,11 +15,11 @@
       "href": "#gallery"
     },
     {
-      "name": "план&nbsp;поселка",
+      "name": "план поселка",
       "href": "#schema"
     },
     {
-      "name": "как&nbsp;проехать",
+      "name": "как проехать",
       "href": "#map"
     }
   ],
@@ -56,27 +56,27 @@
     "header": "Фотогалерея",
     "images": [
       {
-        "src":  "http://localhost:3000/_nuxt/ui/assets/images/pics01.jpg",
+        "src":  "images/pics01.jpg",
         "alt": "Vilga pics"
       },
       {
-        "src":  "http://localhost:3000/_nuxt/ui/assets/images/pics02.jpg",
+        "src":  "images/pics02.jpg",
         "alt": "Vilga pics"
       },
       {
-        "src":  "http://localhost:3000/_nuxt/ui/assets/images/pics03.jpg",
+        "src":  "images/pics03.jpg",
         "alt": "Vilga pics"
       },
       {
-        "src":  "http://localhost:3000/_nuxt/ui/assets/images/pics04.jpg",
+        "src":  "images/pics04.jpg",
         "alt": "Vilga pics"
       },
       {
-        "src":  "http://localhost:3000/_nuxt/ui/assets/images/pics05.jpg",
+        "src":  "images/pics05.jpg",
         "alt": "Vilga pics"
       },
       {
-        "src":  "http://localhost:3000/_nuxt/ui/assets/images/pics06.jpg",
+        "src":  "images/pics06.jpg",
         "alt": "Vilga pics"
       }
     ]
@@ -84,7 +84,7 @@
   "schema" : {
     "header": "Схема поселка",
     "image": {
-      "src": "http://localhost:3000/_nuxt/ui/assets/images/schema1.jpg",
+      "src": "images/schema1.jpg",
       "alt": "Vilga schema"
     }
   },
@@ -92,7 +92,7 @@
     "header": "как добраться",
     "text": "От города Петрозаводск для авто есть несколько комфортных маршрутов. От автовокзала и обратно ездят несколько рейсовых автобусов.",
     "image": {
-      "src": "http://localhost:3000/_nuxt/ui/assets/images/map.jpg",
+      "src": "images/map.jpg",
       "alt": "map direction Vilga"
     }
   },
