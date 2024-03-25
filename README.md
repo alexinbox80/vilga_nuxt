@@ -71,5 +71,11 @@ yarn preview
 # bun
 bun run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+```pm2
+# pm2
+npm install pm2 -g
+pm2 start ecosystem.config.cjs
+pm2 list
+pm2 delete 0
+pm2 restart 0
+```
