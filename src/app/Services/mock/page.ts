@@ -1,0 +1,104 @@
+import type {IPage} from '@app/Services/PageService';
+
+export const pageMock: IPage = {
+    "lang": "ru",
+    "charset": "utf-8",
+    "meta_title": "Meta Title",
+    "meta_description": "Meta Description",
+    "title": "Vilga village",
+    "contact_phone": "7 812 607 17 95",
+    "menu": [
+        {
+            "name": "преимущества",
+            "href": "#advantages"
+        },
+        {
+            "name": "галерея",
+            "href": "#gallery"
+        },
+        {
+            "name": "план поселка",
+            "href": "#schema"
+        },
+        {
+            "name": "как проехать",
+            "href": "#map"
+        }
+    ],
+    "banner": {
+        "header": "участки от <br> 300 тысяч рублей",
+        "sub_header": "экологичная жизнь около чистого леса",
+        "form_title": "У вас есть вопросы? Оставьте заявку на <br> обратный звонок и мы поможем <br> подобрать вам подходящий участок.",
+        "form_name": "Имя",
+        "form_phone": "Телефон",
+        "form_button": "Оставить заявку"
+    },
+    "advantages": {
+        "header": "преимущества",
+        "items": [
+            {
+                "title": "Транспортная доступность",
+                "text": "Поселок расположен всего в 15 километрах от города Петрозаводск. На машине дорога займет от 15 минут, рейсовые автобусы ходят каждые 30 минут."
+            },
+            {
+                "title": "Экологичный район",
+                "text": "Природа, отдаленная от больших городов и промышленных центров, подарит тишину и свежий воздух"
+            },
+            {
+                "title": "Живописный ландшафт",
+                "text": "Поселок окружен лесом из сосновых боров и березовых рощ. В них растут дикие разнообразные Карельские ягоды и грибы."
+            },
+            {
+                "title": "Центральные коммуникации",
+                "text": "Поселок оснащен газом и электричеством, коммунальные платежи за которые достаточно недорогие."
+            }
+        ]
+    },
+    "gallery" : {
+        "header": "Фотогалерея",
+        "images": [
+            {
+                "src":  "images/pics01.jpg",
+                "alt": "Vilga pics"
+            },
+            {
+                "src":  "images/pics02.jpg",
+                "alt": "Vilga pics"
+            },
+            {
+                "src":  "images/pics03.jpg",
+                "alt": "Vilga pics"
+            },
+            {
+                "src":  "images/pics04.jpg",
+                "alt": "Vilga pics"
+            },
+            {
+                "src":  "images/pics05.jpg",
+                "alt": "Vilga pics"
+            },
+            {
+                "src":  "images/pics06.jpg",
+                "alt": "Vilga pics"
+            }
+        ]
+    },
+    "schema" : {
+        "header": "Схема поселка",
+        "image": {
+            "src": "images/schema1.jpg",
+            "alt": "Vilga schema"
+        }
+    },
+    "map": {
+        "header": "как добраться",
+        "text": "От города Петрозаводск для авто есть несколько комфортных маршрутов. От автовокзала и обратно ездят несколько рейсовых автобусов.",
+        "image": {
+            "src": "images/map.jpg",
+            "alt": "map direction Vilga"
+        }
+    },
+    "footer": {
+        "header": "Вилга парк, поселок Новая Вилга"
+    }
+};

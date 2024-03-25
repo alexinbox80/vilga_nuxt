@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+import {PageService} from '@app/Services/PageService';
+const page = await new PageService().find();
+
 import Header from '@ui/components/Header';
 import Advantages from '@ui/components/Advantages';
 import Gallery from '@ui/components/Gallery';
@@ -6,62 +9,63 @@ import Schema from '@ui/components/Schema';
 import Map from '@ui/components/Map';
 import Footer from '@ui/components/Footer';
 
-const {data: page} = await useFetch('/api/page', {
-  transform: (_page) => _page.data,
-});
+// const {data: page} = await useFetch('/api/page', {
+//   transform: (_page) => _page.data,
+// });
+//console.log(toRaw(page.value));
 
 useHead({
   htmlAttrs: {
-    lang: page.value.lang,
+    lang: page.data.lang,
   },
-  title: page.value.title,
+  title: page.data.title,
   meta: [
-    {name: 'description', content: page.value.meta_description},
+    {name: 'description', content: page.data.meta_description},
     {
       'name': 'viewport',
       'content': 'width=device-width, initial-scale=1, shrink-to-fit=no'
     },
     {
-      'charset': page.value.charset
+      'charset': page.data.charset
     }
   ],
 });
 
-console.log(toRaw(page.value));
+console.log(page.data);
 </script>
 <template>
   <div>
     <Header
-        :title="page.banner.header"
-        :sub_title="page.banner.sub_header"
-        :form_title="page.banner.form_title"
-        :form_name="page.banner.form_name"
-        :form_phone="page.banner.form_phone"
-        :form_button="page.banner.form_button"
-        :menu="page.menu"
-        :contact="page.contact_phone"
+        :title="page.data.banner.header"
+        :sub_title="page.data.banner.sub_header"
+        :form_title="page.data.banner.form_title"
+        :form_name="page.data.banner.form_name"
+        :form_phone="page.data.banner.form_phone"
+        :form_button="page.data.banner.form_button"
+        :menu="page.data.menu"
+        :contact="page.data.contact_phone"
     />
     <Advantages
-        :title="page.advantages.header"
-        :items="page.advantages.items"
+        :title="page.data.advantages.header"
+        :items="page.data.advantages.items"
     />
     <Gallery
-        :title="page.gallery.header"
-        :images="page.gallery.images"
+        :title="page.data.gallery.header"
+        :images="page.data.gallery.images"
     />
     <Schema
-        :title="page.schema.header"
-        :image="page.schema.image"
+        :title="page.data.schema.header"
+        :image="page.data.schema.image"
     />
     <Map
-        :title="page.map.header"
-        :text="page.map.text"
-        :image="page.map.image"
+        :title="page.data.map.header"
+        :text="page.data.map.text"
+        :image="page.data.map.image"
     />
     <Footer
-        :title="page.footer.header"
-        :menu="page.menu"
-        :contact="page.contact_phone"
+        :title="page.data.footer.header"
+        :menu="page.data.menu"
+        :contact="page.data.contact_phone"
     />
   </div>
 </template>

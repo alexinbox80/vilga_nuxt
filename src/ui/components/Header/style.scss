@@ -72,7 +72,6 @@ $root: '';
   &__stitle {
     @include fontProper(12px, 400, 20px, 0.015em, $fontColor);
     text-transform: uppercase;
-    font-weight: bold;
   }
 
   &__form {
@@ -92,7 +91,7 @@ $root: '';
   &__formicon {
     position: absolute;
     top: -50px;
-    left: 135px;
+    left: calc(50% - 56px);
   }
 
   &__form-name {
