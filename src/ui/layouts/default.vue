@@ -8,9 +8,4 @@
 </template>
 
 <style lang="scss" scoped>
-.wrapper {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-}
 </style>

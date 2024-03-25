@@ -1,5 +1,6 @@
 @import '../../assets/sass/variables/mixins';
 @import '../../assets/sass/variables/colors';
+@import '../../assets/sass/menu';
 
 $root: '';
 
@@ -169,5 +170,59 @@ $root: '';
     text-decoration: none;
     @include fontProper(12px, 500, 20px, 0.084em, $fontColor);
     text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .content {
+    padding: 0 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top__menu {
+    display: block;
+  }
+
+  .header__textmenu {
+    display: none;
+  }
+
+  .header__background {
+    flex-direction: column;
+    background: url("../../assets/images/bannerfilter640.png"), url("../../assets/images/banner640.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 681px;
+    align-items: baseline;
+  }
+
+  .header__title {
+    margin-top: 32px;
+  }
+
+  .header__form {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .content {
+    padding: 0 16px;
+  }
+
+  .header__background {
+    min-height: 720px;
+  }
+
+  .header__title {
+    @include fontProper(24px, 500, 26px, 0.04em, $fontColor);
+  }
+
+  .header__formicon {
+    left: calc(50% - 56px);
+  }
+
+  .phone a {
+    @include fontProper(16px, 400, 32px, 0.01em, $fontColor);
   }
 }

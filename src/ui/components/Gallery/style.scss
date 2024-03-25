@@ -56,3 +56,43 @@
 .active a span {
   color: $backgroundColor;
 }
+
+
+@media screen and (max-width: 1024px) {
+  .content {
+    padding: 0 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .advntcontent {
+    padding: 0 60px;
+  }
+
+  .gallery__items {
+    width: calc(100% / 2 - 15px);
+  }
+
+  .gallery__items:not(:nth-child(3n+3)) {
+    margin-right: 0;
+  }
+
+  .gallery__items:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .content {
+    padding: 0 16px;
+  }
+
+  .gallery__items {
+    width: 100%;
+    margin-right: 0 !important;
+  }
+
+  .gallery__items:nth-child(n + 4) {
+    display: none;
+  }
+}

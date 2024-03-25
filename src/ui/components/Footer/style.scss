@@ -40,3 +40,54 @@
 .footer__addressdesc {
   display: none;
 }
+
+@media screen and (max-width: 1024px) {
+  .content {
+    padding: 0 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__addressmob {
+    display: none;
+  }
+
+  .footer__addressdesc {
+    display: block;
+    text-align: end;
+  }
+
+  .footer__textlink {
+    line-height: 40px;
+  }
+
+  .footer__iposition {
+    margin-right: 0;
+  }
+
+  .footer__iposition {
+    column-count: 2;
+  }
+
+  .footer__content {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .content {
+    padding: 0 16px;
+  }
+
+  .footer__content {
+    flex-direction: column;
+  }
+
+  .footer__iposition {
+    column-count: 1;
+  }
+
+  .footer__textlink {
+    line-height: 40px;
+  }
+}

@@ -33,3 +33,39 @@
     @include fontProper(14px, 400, 28.5px, 0.01em, $fontColor)
   }
 }
+
+
+
+@media screen and (max-width: 1024px) {
+  .content {
+    padding: 0 60px;
+  }
+
+  .advntcontent {
+    padding: 0 calc(50% - 409px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .advntcontent {
+    padding: 0 60px;
+  }
+
+  .advantages__item {
+    width: calc(100% / 2 - 32px);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .content {
+    padding: 0 16px;
+  }
+
+  .advntcontent {
+    padding: 0 16px;
+  }
+
+  .advantages__item {
+    width: 100%;
+  }
+}

@@ -40,16 +40,16 @@ input[type="checkbox"] {
   &__tclose {
     cursor: pointer;
   }
+}
 
-  #menu__toggle:checked ~ .menu__list {
-    left: 0;
-    box-shadow: 4px 0 20px 0 rgb(0 0 0 / 50%);
-  }
+#menu__toggle:checked ~ .menu__list {
+  left: 0;
+  box-shadow: 4px 0 20px 0 rgb(0 0 0 / 50%);
+}
 
-  #menu__toggle:checked ~ .mask__content {
-    visibility: visible;
-    opacity: 1;
-    -webkit-transition: opacity .5s, visibility .5s;
-    transition: opacity .5s, visibility .5s;
-  }
+#menu__toggle:checked ~ .mask__content {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity .5s, visibility .5s;
+  transition: opacity .5s, visibility .5s;
 }
