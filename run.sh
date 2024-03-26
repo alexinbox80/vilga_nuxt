@@ -9,5 +9,5 @@ docker image rm $APPLICATION
 
 #pnpm run build
 
-docker build -t $APPLICATION .
+docker build --platform linux/amd64 -t $APPLICATION .
 docker run -d -p $NODE_PORT:3000 --name $APPLICATION $APPLICATION
