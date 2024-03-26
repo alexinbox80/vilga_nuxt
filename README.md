@@ -79,3 +79,10 @@ pm2 list
 pm2 delete 0
 pm2 restart 0
 ```
+```docker
+# docker
+./run.sh - build container
+docker stop vilga
+docker ps
+docker exec -u root -it vilga sh
+```
