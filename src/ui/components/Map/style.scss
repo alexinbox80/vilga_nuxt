@@ -5,3 +5,9 @@
   padding-top: 80px;
   background: rgba(243, 246, 243, 1) url("../../assets/images/bgmap.jpg") no-repeat right top;
 }
+
+@media screen and (max-width: 425px) {
+  .section__text {
+    padding: 0 16px;
+  }
+}

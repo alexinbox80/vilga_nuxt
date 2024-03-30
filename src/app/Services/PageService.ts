@@ -59,7 +59,7 @@ export class PageService {
         return await AxiosRequest.testApi
             .get('page', {
                 headers: {
-                    'Accept-Language': 'ru'
+                    'Accept-Language': 'en'
                 },
                 params: {
                     // url: useRequestURL().href
