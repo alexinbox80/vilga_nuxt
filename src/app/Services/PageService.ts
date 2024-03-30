@@ -58,8 +58,11 @@ export class PageService {
     public async find(slug?: string): Promise<{ data: IPage }> {
         return await AxiosRequest.testApi
             .get('page', {
+                headers: {
+                    'Accept-Language': 'ru'
+                },
                 params: {
-                    url: useRequestURL().href
+                    // url: useRequestURL().href
                 }
             })
             .then(async (response) => {
